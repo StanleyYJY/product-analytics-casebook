@@ -1,0 +1,20 @@
+[project]
+name = "product-analytics-casebook"
+version = "0.1.0"
+description = "Product analytics on simulated app events: metric definitions, ordered funnels, cohort retention, an activation threshold check, daily metric anomaly detection, and root-cause decomposition (mix vs rate)."
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=1.26",
+  "pandas>=2.2",
+  "duckdb>=1.1",
+  "pyarrow>=17",
+  "scikit-learn>=1.5",
+  "matplotlib>=3.9",
+  "tabulate>=0.9",
+]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
